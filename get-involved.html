@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask for help or sign up to help | Neighbourly Hands</title>
+<meta name="description" content="Two short forms: ask a neighbour in Bristol for a hand with a lift, a shop run or a form — or sign up to give an hour. Plus coordinator hours, phone and address.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Neighbourly Hands</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="get-involved.html" class="is-current">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Ask for help, or sign up to help</h1>
+      <p>Someone nearby can help. Someone nearby needs you. Both things start the same way — a short form, then a phone call from a real person in Bristol.</p>
+      <p>
+        <a class="button button-primary" href="#request">Request a hand</a>
+        <a class="button button-secondary" href="#helper">Become a helper</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="request">
+    <div class="container">
+      <h2>Request a hand</h2>
+      <p>Tell us what you need and roughly when. Nothing here is a commitment, and you don't have to explain why you need it. If you'd rather talk it through, the phone number is further down the page.</p>
+
+      <form class="form" method="post" action="https://ai.soheililabs.com/api/f/f2edd6e9-0629-4279-9980-1ab949f685af">
+        <input type="hidden" name="_page" value="get-involved.html">
+        <p class="form-trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="field">
+          <label for="req-name">Your name</label>
+          <input id="req-name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="req-postcode">Your postcode</label>
+          <input id="req-postcode" name="postcode" type="text" autocomplete="postal-code" required>
+        </div>
+
+        <div class="field">
+          <label for="req-phone">Phone number</label>
+          <input id="req-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+
+        <div class="field">
+          <label for="req-email">Email address</label>
+          <input id="req-email" name="email" type="email" autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="req-kind">What kind of help?</label>
+          <select id="req-kind" name="kind_of_help">
+            <option>A lift to an appointment</option>
+            <option>A shop run or prescription pick-up</option>
+            <option>Garden or yard tidying</option>
+            <option>Help with a form or a letter</option>
+            <option>Something small around the house</option>
+            <option>Not sure — happy to talk it over</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="req-when">When do you need it? (date, or the first of several)</label>
+          <input id="req-when" name="date_needed" type="date">
+        </div>
+
+        <div class="field">
+          <label for="req-details">Tell us a bit more</label>
+          <textarea id="req-details" name="details" rows="5" placeholder="For example: hospital appointment at Southmead, 10am, needs a lift there and back. I use a walking frame."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="req-access">Anything a helper should know before they arrive?</label>
+          <input id="req-access" name="access_notes" type="text" placeholder="Steps to the door, a dog, best time to knock…">
+        </div>
+
+        <button class="button" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="helper">
+    <div class="container">
+      <h2>Become a helper</h2>
+      <p>An hour a fortnight is plenty. You choose how far you'll travel and what you're happy to do, and you can say no to any request without giving a reason. We'll ask for two references and run a DBS check where the help involves driving or regular visits — we pay for it, and we walk you through it.</p>
+
+      <img src="assets/community-hall-signup.jpg" alt="Neighbourly Hands volunteers sitting around a table in a community hall during a sign-up session" width="6562" height="4375">
+
+      <form class="form" method="post" action="https://ai.soheililabs.com/api/f/f2edd6e9-0629-4279-9980-1ab949f685af">
+        <input type="hidden" name="_page" value="get-involved.html">
+        <p class="form-trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="field">
+          <label for="help-name">Your name</label>
+          <input id="help-name" name="helper_name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="help-email">Email address</label>
+          <input id="help-email" name="helper_email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="help-phone">Phone number</label>
+          <input id="help-phone" name="helper_phone" type="tel" autocomplete="tel">
+        </div>
+
+        <div class="field">
+          <label for="help-postcode">Your postcode</label>
+          <input id="help-postcode" name="helper_postcode" type="text" autocomplete="postal-code" required>
+        </div>
+
+        <div class="field">
+          <label for="help-availability">When are you usually free?</label>
+          <textarea id="help-availability" name="availability" rows="3" placeholder="Weekday mornings, and most Saturdays before lunch."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="help-radius">How far will you travel?</label>
+          <select id="help-radius" name="radius">
+            <option>My street and the next one</option>
+            <option>Up to 1 mile</option>
+            <option>Up to 3 miles</option>
+            <option>Up to 5 miles</option>
+            <option>Anywhere in Bristol</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="help-skills">What are you happy to do?</label>
+          <textarea id="help-skills" name="skills" rows="4" placeholder="Driving (own car, insured for volunteering), shopping, basic gardening, reading forms with someone, a bit of DIY."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="help-driving">Can you offer lifts in your own car?</label>
+          <select id="help-driving" name="driving">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe — I'd like to ask about insurance first</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="help-ref1">Reference one — name and how we reach them</label>
+          <input id="help-ref1" name="reference_one" type="text" placeholder="Pat Hughes, employer, pat@…">
+        </div>
+
+        <div class="field">
+          <label for="help-ref2">Reference two — name and how we reach them</label>
+          <input id="help-ref2" name="reference_two" type="text" placeholder="Someone who has known you two years or more">
+        </div>
+
+        <div class="field">
+          <label for="help-notes">Anything else you'd like us to know?</label>
+          <textarea id="help-notes" name="helper_notes" rows="3"></textarea>
+        </div>
+
+        <button class="button" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Prefer to call or come in?</h2>
+      <p>Plenty of people would rather speak to someone than fill in boxes, and that's completely fine. Rowan and Delia share the coordinator desk, and one of them is on the phone during the hours below.</p>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>Phone</dt>
+          <dd>0117 496 0188</dd>
+        </div>
+        <div class="fact">
+          <dt>Email</dt>
+          <dd>hello@neighbourlyhands.org</dd>
+        </div>
+        <div class="fact">
+          <dt>Coordinator hours</dt>
+          <dd>Monday to Thursday, 9.30am&ndash;4pm. Friday, 9.30am&ndash;1pm.</dd>
+        </div>
+        <div class="fact">
+          <dt>Come and find us</dt>
+          <dd>The Old Dairy, 14 Stanton Road, Bristol BS7 9PL. Step-free side entrance, buzzer marked <em>Neighbourly Hands</em>.</dd>
+        </div>
+      </dl>
+
+      <p>If we're out on a visit, leave a message with your name and number. We listen to the machine twice a day and we do ring back.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>What happens after you press send</h2>
+      <p>No automated queue, no reference number to quote. Here's the whole of it.</p>
+
+      <ul class="card-grid">
+        <li class="card">
+          <h3>1. We read it that day</h3>
+          <p>Both forms land on the coordinator's desk, not in a shared inbox nobody owns. Requests marked urgent get looked at first.</p>
+        </li>
+        <li class="card">
+          <h3>2. We call you back within two working days</h3>
+          <p>A short, friendly call to check we've understood. For requests, we'll agree a time. For helpers, we'll talk through what you fancy doing and start the references.</p>
+        </li>
+        <li class="card">
+          <h3>3. We make the match</h3>
+          <p>We look for someone close by who's free when you need them. You get their first name before they arrive, and they carry a Neighbourly Hands card.</p>
+        </li>
+        <li class="card">
+          <h3>4. We check in afterwards</h3>
+          <p>A quick call or text to ask how it went. If the pairing worked, we'll keep you together. If it didn't, say so — we'll try someone else, no awkwardness.</p>
+        </li>
+      </ul>
+
+      <blockquote class="quote">
+        <p>I filled the form in on the Sunday evening feeling a bit daft about it. Delia rang on the Tuesday morning, and by Thursday a chap called Omar had driven me to the eye clinic and back. He's driven me three times since.</p>
+        <cite>Maureen, Horfield</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Other ways to pitch in</h2>
+      <p>Not everyone has a free hour on a weekday, and not every useful thing is a visit to someone's door.</p>
+
+      <ul class="card-grid">
+        <li class="card">
+          <h3>The Tuesday drop-in</h3>
+          <p>Every Tuesday, 10am to midday, at The Old Dairy. Tea, biscuits, and someone to sit with while you sort out a letter or just ask a question. Nobody signs anything. Come once or come weekly.</p>
+        </li>
+        <li class="card">
+          <h3>Donate a vehicle hour</h3>
+          <p>If you have a car, a van or a cargo bike and an hour spare, we'll match it to a lift or a bulky pick-up. You tell us the hour; we fill it or we don't bother you. Fuel costs reimbursed at 45p a mile.</p>
+        </li>
+        <li class="card">
+          <h3>Host a street sign-up</h3>
+          <p>Put the kettle on, open your front room or your front garden for an hour, and we'll bring the forms and a coordinator. Most streets come away with four or five new helpers.</p>
+        </li>
+        <li class="card">
+          <h3>Pass the number on</h3>
+          <p>The quietest and most useful thing you can do. Give 0117 496 0188 to the neighbour who'd never ring us themselves. We'll take it gently from there.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Still deciding which form is yours?</h2>
+      <p>Ring 0117 496 0188 and say so. Asking for help is an ordinary thing to do, and so is offering it. We'll work out the rest together.</p>
+      <p>
+        <a class="button button-primary" href="#request">Request a hand</a>
+        <a class="button button-secondary" href="how-it-works.html">See how it works</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>Neighbourly Hands</strong> — Someone nearby can help. Someone nearby needs you.</p>
+    <p>The Old Dairy, 14 Stanton Road, Bristol BS7 9PL · 0117 496 0188 · hello@neighbourlyhands.org</p>
+    <p>
+      <a href="index.html">Home</a> ·
+      <a href="how-it-works.html">How It Works</a> ·
+      <a href="get-involved.html">Get Involved</a>
+    </p>
+    <p><small>© 2026 Neighbourly Hands · <a href="https://www.pexels.com">Photographs via Pexels</a></small></p>
+  </div>
+</footer>
+</body>
+</html>
